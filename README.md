@@ -7,7 +7,7 @@ Created by [Jaiden Mispy](https://github.com/mispy), updated to use hipster tech
 ## Installation
 
 ```shell
-git clone git://github.com/myfreeweb/twitter_ebooks.git
+git clone git://github.com/generalroshambo/twitter_ebooks.git
 cd twitter_ebooks
 heroku create --stack cedar
 git push heroku master
