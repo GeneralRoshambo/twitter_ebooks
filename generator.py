@@ -13,7 +13,7 @@ class Generator:
         for tweet in tweets:
             if "@" in tweet or tweet.startswith("RT"):
                 continue
-            words += [word for word in tweet.split() if word[0] not in ["@", "#", "Photo:", "Photoset:", "Video:", "(Via"] and not "http://" in word and not "https://" in word]
+            words += [word for word in tweet.split() if word[0] not in ["@", "#", ":", "(", ")", "2"] and not "http://" in word and not "https://" in word]
         self.words = words
         self.model = nltk.Text(words)
         estimator = lambda fdist, bins: LidstoneProbDist(fdist, 0.2)
